@@ -1,0 +1,15 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  height: 100vh;
+}
+
+.grid-section {
+  background-color: lightblue;
+  transition: all 0.3s ease-in-out;
+}
+
+.grid-section:hover {
+  z-index: 1;
+}

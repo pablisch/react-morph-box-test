@@ -1,0 +1,21 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-section {
+  background-color: lightblue;
+  transition: all 0.3s ease-in-out;
+  min-height: 2vh;
+  min-width: 2vw;
+  margin: 1vw;
+}
+
+.grid-section.hovered {
+  transform: scale(5);
+}
+
+.grid-section:hover {
+  z-index: 1;
+}

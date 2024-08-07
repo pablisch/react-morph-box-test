@@ -1,0 +1,26 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 100vh;
+  width: 100%;
+}
+
+.grid-section {
+  background-color: rgb(106, 160, 179);
+  transition: all 0.3s ease-in-out;
+}
+
+.hovered {
+  transform: scale(3);
+}
+
+.grid-section:not(.hovered) {
+  transform: scale(0.5);
+  opacity: 0.1;
+}
+
+.grid-section:hover {
+  z-index: 1;
+  opacity: 1;
+}

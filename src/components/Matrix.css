@@ -1,0 +1,36 @@
+.single-row-container {
+  display: flex;
+  width: 100%;
+}
+
+.panel {
+  flex: 1;
+  background-color: rgb(84, 179, 211);
+  transition: all 1.5s ease-out;
+  height: 10vh;
+  margin: 0.1vw;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.panel.active {
+  flex-grow: 5;
+  height: 70vh;
+}
+
+.panel.passive {
+  flex-grow: 1;
+}
+
+/*.row.*/
+
+.passive-row {
+  height: 30vh;
+}
+
+.active-row {
+  height: 70vh;
+}

@@ -1,0 +1,23 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 98vw;
+  height: 98vh;
+  justify-content: stretch;
+  align-items: space-around;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 10px;
+  justify-content: space-around;
+  transition: all 7s;
+
+}
+
+.active {
+  background-color: #5be859;
+  flex: 5 1 500px;
+  transition: all 7s;
+}
