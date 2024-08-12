@@ -17,7 +17,8 @@
 }
 
 .panel.active {
-  flex-grow: 5;
+  /* with a 4 panel width, flex-grow 5.08 lines up the 1/4 and 3/4 divides perfectly in tests on a full window 16" MBP. */
+  flex-grow: 5.08;
   height: 70vh;
 }
 
